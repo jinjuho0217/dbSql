@@ -174,3 +174,5 @@ FROM emp
 WHERE job IN('SALESMAN') OR empno LIKE('78%');
 
 
+
+

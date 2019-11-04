@@ -218,7 +218,7 @@ FROM dual;
 -- 양변에서 D2를 차감
 -- D1 + 정수 -D2 = D2-D2
 -- D1 + 정수 - D2 = 0
---날짜에서 날짜를 빼면 일자가 나온다.
+--날짜에서 날짜를 빼면 일자가 나온다
 
 SELECT TO_DATE('20191104','YYYYMMDD') - TO_DATE('20191101', 'YYYYMMDD') d_1,
             TO_DATE('20191201','YYYYMMDD') - TO_DATE('20191101', 'YYYYMMDD') d_2,
