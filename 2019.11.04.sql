@@ -191,8 +191,8 @@ FROM dual;
 --ADD_MONTHS(DATE, 개월수) : DATE에 개월수가 지난 날짜
 -- 개월수가 양수일 경우 미래, 음수일 경우 과거
 SELECT  ename, TO_CHAR(hiredate, 'YYYY-MM-DD'), hiredate,           
-            ADD_MOMTHS(hiredate, 467) add_months,
-            ADD_MOMTHS(hiredate, -467) add_months
+            ADD_MONTHS(hiredate, 467) add_months,
+            ADD_MONTHS(hiredate, -467) add_months
 FROM emp
 WHERE ename = 'SMITH';
 
