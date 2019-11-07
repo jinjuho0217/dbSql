@@ -256,5 +256,5 @@ from salgrade;
 
 
 select empno, ename, deptno, loc
-from emp natural join dept;
+from emp natural join dept;-- 모든 컬럼을 출력함
 
