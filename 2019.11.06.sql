@@ -40,7 +40,7 @@ SALES	        2850	    950	    1566.67	    9400	    6	6	6
 SELECT TO_CHAR (hiredate,'YYYY/MM'), 
             count(hiredate) cnt
 FROM emp
-group by TO_CHAR (hiredate,'YYYY/MM');
+GROUP by TO_CHAR (hiredate,'YYYY/MM');
 ----------실행결과
 1981/02	    2
 1983/01	    1
@@ -60,7 +60,7 @@ group by TO_CHAR (hiredate,'YYYY/MM');
 SELECT TO_CHAR (hiredate,'YYYY') hdate, 
             count(hiredate) cnt
 FROM emp
-group by TO_CHAR (hiredate,'YYYY')
+GROUP by TO_CHAR (hiredate,'YYYY')
 ORDER BY TO_CHAR(hiredate, 'YYYY');
 ---------실행결과
 1980	    1

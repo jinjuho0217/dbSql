@@ -188,3 +188,12 @@ order by pid;
 select  cycle.pid, cycle.cid, sum(cnt)
 from cycle join product on(cycle.pid = product.pid) join customer on(cycle.cid = customer.cid)
 group by cycle.pid, cycle.cid;
+
+select *
+from customer;
+
+select *
+from cycle;
+
+select *
+from product;
