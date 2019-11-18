@@ -324,7 +324,7 @@ Plan hash value: 3956160932
 --------------------------------------------------------------------------
 |   0 | SELECT STATEMENT  |      |     1 |    37 |     3   (0)| 00:00:01 |         --> 라벨의 깊이가 다른경우 깊이가 더 깊은 라벨부터 읽는다.
 |*  1 |  TABLE ACCESS FULL| EMP  |     1 |    37 |     3   (0)| 00:00:01 |      --> 라벨의 깊이가 같은 경우는 위에서 아래 순으로 읽는다.
- --  * 표시는
+ --  * 표시는 마지막으로 실행된 표시
 --------------------------------------------------------------------------
  
 Predicate Information (identified by operation id):
@@ -332,3 +332,9 @@ Predicate Information (identified by operation id):
  
    1 - filter("EMPNO"=7369) --> index가 없어서 테이블 전체를 읽음 // index가 없는 경우(primary key, unique값이 없는 경우)에는 filter이고 index가 있으면(primary key, unique값이 있는 경우) access로 표시됨
 ------------------------------------------------------------------------------
+
+
+
+
+
+

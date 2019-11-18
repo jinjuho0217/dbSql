@@ -175,4 +175,5 @@ WHERE job IN('SALESMAN') OR empno LIKE('78%');
 
 
 
-
+select user_id, usernm, reg_dt, reg_dt + 5
+from users;
