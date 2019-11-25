@@ -200,6 +200,11 @@ select round(avg(sal),2)a, deptno
 from emp
 group by deptno;
 
+select MIN(decode(deptno, 10,  round(avg(sal),2))) A, 
+        MIN(decode(deptno, 20,  round(avg(sal),2))) B,
+        MIN(decode(deptno, 30,  round(avg(sal),2))) C 
+from emp
+group by deptno;
 ------------------------------------------------------------------
 
 
